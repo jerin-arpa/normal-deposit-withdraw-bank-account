@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <!-- Daisy Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center text-teal-500 mt-20">Lets Get Some <span
+                class="text-red-400">Moooooooooney</span>!!!!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="card shadow-xl  bg-green-400 text-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">Deposit</h2>
+                        <p class="text-5xl">$<span id="deposit-total">00</span></p>
+                    </div>
+                </div>
+
+                <div class="card shadow-xl bg-orange-400 text-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">Withdraw</h2>
+                        <p class="text-5xl">$<span id="withdraw-total">00</span></p>
+                    </div>
+                </div>
+
+                <div class="card shadow-xl bg-violet-500 text-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">Balance</h2>
+                        <p class="text-5xl">$<span id="balance-total">1240</span> </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="card shadow-xl bg-fuchsia-400 text-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Please Deposit</h2>
+
+                        <input class="w-full block mb-2 my-4 p-3 rounded text-fuchsia-800" type="text"
+                            placeholder="$ Amount you want to Deposit" name="" id="deposit-field">
+
+                        <button id="btn-deposit"
+                            class="btn bg-fuchsia-800 border-0 mt-2 text-white hover:bg-green-400 w-28">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl bg-teal-400 text-white">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Please Withdraw</h2>
+
+                        <input class="w-full block mb-2 my-4 p-3 rounded text-teal-800" type="text"
+                            placeholder="$ Amount you want to Withdraw" name="" id="withdraw-field">
+
+                        <button id="btn-withdraw"
+                            class="btn bg-teal-800 border-0 mt-2 text-white hover:bg-orange-400 w-28">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
